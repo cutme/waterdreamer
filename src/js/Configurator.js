@@ -10,8 +10,7 @@
 	Configurator.prototype.enable = function() {
 		var next = document.getElementById('configuratorNext'),
 			navbar = document.getElementById('navBar'),
-			steps = document.getElementById('configuratorSteps'),
-			i = 1;
+			steps = document.getElementById('configuratorSteps');
 
 		next.addEventListener("click", function(e) {
 			e.preventDefault();
@@ -22,6 +21,10 @@
 			$('li', navbar).eq( $('> li.is-active', steps).index() ).addClass('is-active');
 			
 			waterdreamer.helper.goToTarget('#configurator');
+			
+			if ( $('> li.is-active', steps).index() == $(steps).length ) {
+				$(next).removeClass('bg-navy').addClass('bg-gray--darker');
+			}
 		});
 	};
 
