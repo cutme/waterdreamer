@@ -1,0 +1,46 @@
+[class^="icon-"], [class*=" icon-"] {
+	@include icomoon;
+	
+	&:before {
+		position: relative;
+		left: -1px;
+	}
+}
+
+.is-hidden {
+	display: none;
+}
+
+.top-placeholder {
+	@extend %abs;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100px;
+	background: {
+		image: url(../images/addons/wd-top.png);
+		repeat: no-repeat;
+		position: center;
+	}
+}
+
+.safari {
+	* {
+		-webkit-backface-visibility: hidden;
+		-webkit-transform-style: preserve-3d;
+	}
+}
+
+
+/* IE */
+
+@media screen and (max-width:400px) {
+    @-ms-viewport{
+        width:320px;
+    }
+}
+
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}

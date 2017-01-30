@@ -1,0 +1,43 @@
+.c-term {
+	//@extend %clear;
+	margin-bottom: 40px;
+	display: flex;
+	justify-content: space-between;
+	
+	&__item {
+		width: 310px;
+	}
+	
+	&__lead {
+		margin-bottom: 5px;
+		font: {
+			size: em(17);
+			weight: $bold;
+		}
+	}
+	
+	.nice-select {
+		margin-bottom: 5px;
+	}
+
+	.calendar {
+		.current {
+			position: relative;
+			padding-left: 35px;
+
+			&:before {
+				@extend %abs-after;
+				@include ic-calendar-mixin;
+				left: -10px; top: -8px;
+			}
+		}
+		
+		&.open {
+			.current {
+				&:before {
+					@include ic-calendar-active;
+				}
+			}		
+		}
+	}
+}

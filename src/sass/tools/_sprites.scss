@@ -1,0 +1,494 @@
+.ic-10x {
+    display: block;
+    width: 44px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -36px;
+    flex-shrink: 0;
+}
+@mixin ic-10x() {
+    background-position: 0px -36px !important;
+}
+@mixin ic-10x-mixin() {
+    display: block;
+    width: 44px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -36px;
+    flex-shrink: 0;
+}
+.ic-arrow-down {
+    display: block;
+    width: 20px;
+    height: 14px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px 0px;
+    flex-shrink: 0;
+}
+@mixin ic-arrow-down() {
+    background-position: 0px 0px !important;
+}
+@mixin ic-arrow-down-mixin() {
+    display: block;
+    width: 20px;
+    height: 14px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px 0px;
+    flex-shrink: 0;
+}
+.ic-bus-active {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -741px;
+    flex-shrink: 0;
+}
+@mixin ic-bus-active() {
+    background-position: 0px -741px !important;
+}
+@mixin ic-bus-active-mixin() {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -741px;
+    flex-shrink: 0;
+}
+.ic-bus-small {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -66px;
+    flex-shrink: 0;
+}
+@mixin ic-bus-small() {
+    background-position: 0px -66px !important;
+}
+@mixin ic-bus-small-mixin() {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -66px;
+    flex-shrink: 0;
+}
+.ic-bus {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -637px;
+    flex-shrink: 0;
+}
+@mixin ic-bus() {
+    background-position: 0px -637px !important;
+}
+@mixin ic-bus-mixin() {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -637px;
+    flex-shrink: 0;
+}
+.ic-calendar-active {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -368px;
+    flex-shrink: 0;
+}
+@mixin ic-calendar-active() {
+    background-position: 0px -368px !important;
+}
+@mixin ic-calendar-active-mixin() {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -368px;
+    flex-shrink: 0;
+}
+.ic-calendar-small {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -156px;
+    flex-shrink: 0;
+}
+@mixin ic-calendar-small() {
+    background-position: 0px -156px !important;
+}
+@mixin ic-calendar-small-mixin() {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -156px;
+    flex-shrink: 0;
+}
+.ic-calendar {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -336px;
+    flex-shrink: 0;
+}
+@mixin ic-calendar() {
+    background-position: 0px -336px !important;
+}
+@mixin ic-calendar-mixin() {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -336px;
+    flex-shrink: 0;
+}
+.ic-dog {
+    display: block;
+    width: 55px;
+    height: 45px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -434px;
+    flex-shrink: 0;
+}
+@mixin ic-dog() {
+    background-position: 0px -434px !important;
+}
+@mixin ic-dog-mixin() {
+    display: block;
+    width: 55px;
+    height: 45px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -434px;
+    flex-shrink: 0;
+}
+.ic-fisher-2 {
+    display: block;
+    width: 85px;
+    height: 80px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -897px;
+    flex-shrink: 0;
+}
+@mixin ic-fisher-2() {
+    background-position: 0px -897px !important;
+}
+@mixin ic-fisher-2-mixin() {
+    display: block;
+    width: 85px;
+    height: 80px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -897px;
+    flex-shrink: 0;
+}
+.ic-fisher {
+    display: block;
+    width: 31px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -276px;
+    flex-shrink: 0;
+}
+@mixin ic-fisher() {
+    background-position: 0px -276px !important;
+}
+@mixin ic-fisher-mixin() {
+    display: block;
+    width: 31px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -276px;
+    flex-shrink: 0;
+}
+.ic-home-active {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -481px;
+    flex-shrink: 0;
+}
+@mixin ic-home-active() {
+    background-position: 0px -481px !important;
+}
+@mixin ic-home-active-mixin() {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -481px;
+    flex-shrink: 0;
+}
+.ic-home-small {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -306px;
+    flex-shrink: 0;
+}
+@mixin ic-home-small() {
+    background-position: 0px -306px !important;
+}
+@mixin ic-home-small-mixin() {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -306px;
+    flex-shrink: 0;
+}
+.ic-home {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -845px;
+    flex-shrink: 0;
+}
+@mixin ic-home() {
+    background-position: 0px -845px !important;
+}
+@mixin ic-home-mixin() {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -845px;
+    flex-shrink: 0;
+}
+.ic-kitchen {
+    display: block;
+    width: 20px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -216px;
+    flex-shrink: 0;
+}
+@mixin ic-kitchen() {
+    background-position: 0px -216px !important;
+}
+@mixin ic-kitchen-mixin() {
+    display: block;
+    width: 20px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -216px;
+    flex-shrink: 0;
+}
+.ic-man-big {
+    display: block;
+    width: 50px;
+    height: 80px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -979px;
+    flex-shrink: 0;
+}
+@mixin ic-man-big() {
+    background-position: 0px -979px !important;
+}
+@mixin ic-man-big-mixin() {
+    display: block;
+    width: 50px;
+    height: 80px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -979px;
+    flex-shrink: 0;
+}
+.ic-man-small {
+    display: block;
+    width: 28px;
+    height: 32px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -400px;
+    flex-shrink: 0;
+}
+@mixin ic-man-small() {
+    background-position: 0px -400px !important;
+}
+@mixin ic-man-small-mixin() {
+    display: block;
+    width: 28px;
+    height: 32px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -400px;
+    flex-shrink: 0;
+}
+.ic-people-active {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -533px;
+    flex-shrink: 0;
+}
+@mixin ic-people-active() {
+    background-position: 0px -533px !important;
+}
+@mixin ic-people-active-mixin() {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -533px;
+    flex-shrink: 0;
+}
+.ic-people {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -585px;
+    flex-shrink: 0;
+}
+@mixin ic-people() {
+    background-position: 0px -585px !important;
+}
+@mixin ic-people-mixin() {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -585px;
+    flex-shrink: 0;
+}
+.ic-phone {
+    display: block;
+    width: 20px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -16px;
+    flex-shrink: 0;
+}
+@mixin ic-phone() {
+    background-position: 0px -16px !important;
+}
+@mixin ic-phone-mixin() {
+    display: block;
+    width: 20px;
+    height: 18px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -16px;
+    flex-shrink: 0;
+}
+.ic-plus-active {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -689px;
+    flex-shrink: 0;
+}
+@mixin ic-plus-active() {
+    background-position: 0px -689px !important;
+}
+@mixin ic-plus-active-mixin() {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -689px;
+    flex-shrink: 0;
+}
+.ic-plus-small {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -126px;
+    flex-shrink: 0;
+}
+@mixin ic-plus-small() {
+    background-position: 0px -126px !important;
+}
+@mixin ic-plus-small-mixin() {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -126px;
+    flex-shrink: 0;
+}
+.ic-plus {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -793px;
+    flex-shrink: 0;
+}
+@mixin ic-plus() {
+    background-position: 0px -793px !important;
+}
+@mixin ic-plus-mixin() {
+    display: block;
+    width: 80px;
+    height: 50px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -793px;
+    flex-shrink: 0;
+}
+.ic-tv {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -96px;
+    flex-shrink: 0;
+}
+@mixin ic-tv() {
+    background-position: 0px -96px !important;
+}
+@mixin ic-tv-mixin() {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -96px;
+    flex-shrink: 0;
+}
+.ic-wc {
+    display: block;
+    width: 26px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -246px;
+    flex-shrink: 0;
+}
+@mixin ic-wc() {
+    background-position: 0px -246px !important;
+}
+@mixin ic-wc-mixin() {
+    display: block;
+    width: 26px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -246px;
+    flex-shrink: 0;
+}
+.ic-wifi {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -186px;
+    flex-shrink: 0;
+}
+@mixin ic-wifi() {
+    background-position: 0px -186px !important;
+}
+@mixin ic-wifi-mixin() {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-image: url(../images/sprites.png);
+    background-position: 0px -186px;
+    flex-shrink: 0;
+}

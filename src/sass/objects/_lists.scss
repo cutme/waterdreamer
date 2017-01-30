@@ -1,0 +1,15 @@
+.o-list {
+	&--square {
+		li {
+			position: relative;
+			padding-left: 10px;
+
+			&:before {
+				@extend %abs-after;
+				left: 0; top: 6px;
+				width: 4px; height: 4px;
+				background-color: $c-green;
+			}
+		}
+	}
+}

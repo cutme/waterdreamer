@@ -1,0 +1,50 @@
+.c-configurator {
+	@extend %clear;
+	background: {
+		image: url(../images/bg-fullimage.jpg);
+		size: cover;
+	}
+	min-height: 100%;
+	padding: 180px 0 100px 0;
+	
+	&__footer {
+		border-top: 1px solid $c-navy;
+		padding-top: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		
+		.o-btn--contact {
+			height: 36px;
+		}
+		
+		.o-btn--next {
+			border-left: 20px solid white;
+			margin-top: -21px;
+		}
+	}
+	
+	&__panel {
+		@extend %rel;
+		background-color: white;
+		border-radius: 8px;
+		box-shadow: rgba(black, .5) 0 0 24px;
+		padding: 55px 45px;
+	}
+	
+	&__page {
+		@extend %abs;
+		right: 45px; top: 30px;
+		font: {
+			size: em(22);
+			weight: $bold;
+		}
+	}
+	
+	hr {
+		background-color: $c-navy;
+		height: 1px;
+		margin: 20px 0;
+		border: none;
+	}
+}

@@ -1,0 +1,54 @@
+.c-members {
+	@extend %clear;
+
+	&__item {
+		float: left;
+		width: 280px;
+		margin-bottom: 30px;
+		
+		&:nth-child(2n) {
+			width: 700px;
+		}
+		
+		i {
+			float: left;
+		}
+		
+		&--dog {
+			label {
+				display: inline-block;
+				margin-top: 10px;
+			}
+		}
+	}
+	
+	&__lead {
+		@extend %clear;
+		text-transform: uppercase;
+		font: {
+			family: $bebas;
+			size: em(25);
+		}
+		
+		&--big {
+			font-size: em(47);
+		}
+	}
+	
+	&__select {
+		float: left;
+		
+		p {
+			@extend %clear;
+			margin-bottom: 5px;
+			font: {
+				size: em(17);
+				weight: $bold;
+			}
+		}
+		
+		.current {
+			font-size: em(20);
+		}
+	}
+}

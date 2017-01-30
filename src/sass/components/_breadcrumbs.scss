@@ -1,0 +1,16 @@
+.c-breadcrumbs {
+	margin-bottom: 40px;
+	
+	p {
+		display: inline-block;
+		font-style: italic;
+		border-bottom: 1px solid $c-gray;
+		color: $c-gray;
+	}
+	
+	&__arrow {
+		&:after {
+			content: ' -> ';
+		}
+	}
+}

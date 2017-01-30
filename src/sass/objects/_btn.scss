@@ -1,0 +1,57 @@
+.o-btn {
+	@extend %antialias;
+	@extend %anim;
+	display: inline-block;
+	position: relative;
+	text-transform: uppercase;
+	font-weight: $bold;
+	cursor: pointer;
+	color: white !important;
+	white-space: nowrap;
+	
+	i {
+		display: inline-block;
+		margin-right: 5px;
+		vertical-align: middle;
+	}
+	
+	&--big {
+		padding: 14px 50px 0 50px;
+		line-height: 1;
+		border-radius: 4px;
+		font: {
+			family: $bebas;
+			size: em(45);
+		}
+		
+		
+	}
+	
+	&--medium {
+		box-shadow: rgba(black, .4) 0 2px 2px;
+		padding: 8px 15px;
+		border-radius: 8px;
+		font-size: em(16);
+	}
+	
+	&--small {
+		padding: 8px 15px 5px 10px;
+		border-radius: 4px;
+		font: {
+			family: $bebas;
+			size: em(16.24);
+		}
+	}
+	
+	&.bg-navy:hover {
+		background-color: darken($c-navy, 10%);
+	}
+	
+	&.bg-green:hover {
+		background-color: darken($c-green, 10%);
+	}
+	
+	&.bg-gray--darker:hover {
+		background-color: darken($c-gray--darker, 10%);
+	}
+}

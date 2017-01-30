@@ -1,0 +1,79 @@
+.c-selected {
+	margin-bottom: 50px;
+
+	&__content {
+		@extend %clear;
+		border: 1px solid $c-navy;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+		padding: 10px;
+	}
+	
+	&__item {
+		float: left;
+		width: 300px;
+
+		&:nth-child(2n+1) {
+			clear: left;
+		}		
+		
+		&--wide {
+			width: 100%;
+		}
+	}
+	
+	dl {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 10px;
+	}
+	
+	dt {
+		float: left;
+		width: 50px;
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	}
+	
+	dd {
+		float: left;
+		font-weight: $bold;
+		
+		small {
+			font-size: em(12);
+			font-style: italic;
+			color: $c-gray;
+		}
+		
+		&.wide {
+			width: 800px;
+		}
+	}
+	
+	&__info {
+		float: left;		
+	}
+
+	&__title {
+		@include gradient(#333572, #22234c);
+		padding: 8px 0 2px 10px;
+		line-height: 1;
+		font: {
+			family: $bebas;
+			size: em(25);
+		}
+		color: white;
+	}
+	
+	.o-list {
+		li {
+			float: left;
+			width: 200px;
+			font: {
+				size: em(12);
+				weight: $bold;
+			}
+		}
+	}
+}

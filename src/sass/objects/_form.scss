@@ -1,0 +1,29 @@
+.c-configurator {
+	input[type=checkbox] {
+		display: none;
+		
+		& + label {
+			i {
+				height: 18px;
+				width: 18px;
+				background-color: $c-gray--brightest;
+				display: inline-block;
+				border-radius: 50%;
+				border: 1px solid $c-navy;
+				cursor: pointer;
+			}
+	
+			span {
+				padding-left: 10px;
+			}
+		}
+		
+		&:checked {
+			& + label {
+				i {
+					background: $c-gray;
+				}
+			}
+		}
+	}
+}

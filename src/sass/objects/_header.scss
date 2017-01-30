@@ -1,0 +1,13 @@
+.o-header {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-family: $bebas;
+
+	&--big {
+		font-size: em(47);
+	}
+	
+	&--medium {
+		font-size: em(33);
+	}
+}
