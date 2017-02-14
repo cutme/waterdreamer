@@ -41,12 +41,12 @@
 			text-transform: uppercase;
 			font: {
 				family: $bebas;
-				size: em(20);
+				size: em(32);
 			}
 			color: #7F7F7F;	
 			
 			@media screen and ( max-width: $tablet_portrait + px ) {
-				padding: 5px 15px;
+				padding: 0 15px;
 			}		
 		}
 	}
