@@ -24,6 +24,11 @@
 		
 		.o-wrap {
 			padding-right: 45px;
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				padding-right: 15px;
+			}
+			
 		}
 	}
 	
