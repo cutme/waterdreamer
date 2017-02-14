@@ -23,6 +23,33 @@
 		box-shadow: rgba(black, .3) 0 2px 3px inset;
 		display: flex;
 		justify-content: space-between;
+		
+		
+		&:after,
+		&:before {
+			@extend %abs-after;
+			top: 0;
+			width: 5%;
+			height: 20px;
+			background-color: white;
+		}
+		
+		&:before {
+			left: 0;
+		}
+		
+		&:after {
+			right: 0;
+		}
+		
+		&:before,
+		&:after {
+			display: none;
+			
+			@media screen and ( max-width: $tablet + px ) {
+				display: block;
+			}
+		}
 	}
 	
 	&__step {
