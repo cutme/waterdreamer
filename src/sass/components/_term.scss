@@ -1,11 +1,26 @@
 .c-term {
-	//@extend %clear;
+	@extend %clear;
 	margin-bottom: 40px;
-	display: flex;
-	justify-content: space-between;
+	
+	@media screen and ( min-width: 641 + px ) {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	&__error {
+		margin-bottom: 10px;
+	}
 	
 	&__item {
 		width: 310px;
+
+		@media screen and ( min-width: 641 + px ) and ( max-width: $grid-base-width + px ) {
+			width: grid(310, 1070 - 45 - 45);
+		}
+		
+		
+		
+//		$grid-base-width 1070
 	}
 	
 	&__lead {

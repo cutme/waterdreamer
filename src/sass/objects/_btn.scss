@@ -1,6 +1,7 @@
 .o-btn {
 	@extend %antialias;
 	@extend %anim;
+	@extend %rel;
 	display: inline-block;
 	position: relative;
 	text-transform: uppercase;
@@ -8,7 +9,7 @@
 	cursor: pointer;
 	color: white !important;
 	white-space: nowrap;
-	
+
 	i {
 		display: inline-block;
 		margin-right: 5px;
@@ -22,9 +23,7 @@
 		font: {
 			family: $bebas;
 			size: em(45);
-		}
-		
-		
+		}		
 	}
 	
 	&--medium {
@@ -53,5 +52,15 @@
 	
 	&.bg-gray--darker:hover {
 		background-color: darken($c-gray--darker, 10%);
+	}
+	
+	&.is-inactive {
+		background-color: #b9b9b9;
+		color: #f1f1f1;
+		
+		&:hover {
+			background-color: #b9b9b9;
+			color: #f1f1f1;
+		}
 	}
 }

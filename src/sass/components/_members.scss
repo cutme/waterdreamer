@@ -3,11 +3,28 @@
 
 	&__item {
 		float: left;
+		width: grid(280, 1170 - 2*45);
 		width: 280px;
 		margin-bottom: 30px;
 		
+		@media screen and ( max-width: $grid-base-width + px ) {
+			width: 50%;
+		}
+		
 		&:nth-child(2n) {
-			width: 700px;
+			width: grid(700, $grid-base-width - 2*45);
+			
+			@media screen and ( max-width: $grid-base-width + px ) {
+				width: 50%;
+			}
+			
+			@media screen and ( max-width: 640px ) {
+				width: 100%;
+				
+				br {
+					display: none;
+				}
+			}
 		}
 		
 		i {
@@ -20,6 +37,19 @@
 				margin-top: 10px;
 			}
 		}
+		
+	
+@media screen and ( max-width: $grid-base-width + px ) {
+			width: 50%;
+		}
+
+		@media screen and ( max-width: 640px ) {
+			float: none;
+			width: 100%;
+			margin-bottom: 30px;
+			@include clear;
+		}
+		
 	}
 	
 	&__lead {

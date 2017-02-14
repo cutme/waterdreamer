@@ -1,0 +1,10 @@
+.c-logo {
+	@extend %abs;
+	left: 45px;
+	top: 40px;
+	
+	@media screen and ( max-width: $tablet + px ) {
+		left: 15px;
+	}
+	
+}

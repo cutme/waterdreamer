@@ -21,7 +21,8 @@
 		&:checked {
 			& + label {
 				i {
-					background: $c-gray;
+					background: #95d212;
+					box-shadow: white 0 0 0 2px inset;
 				}
 			}
 		}

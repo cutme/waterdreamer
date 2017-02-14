@@ -1,13 +1,22 @@
 .o-header {
-	margin-bottom: 0;
+	margin-bottom: 5px;
 	text-transform: uppercase;
 	font-family: $bebas;
+	line-height: 1;
 
 	&--big {
 		font-size: em(47);
+		
+		@media screen and ( max-width: $tablet_portrait + px ) {
+			font-size: em(42);
+		}
 	}
 	
 	&--medium {
 		font-size: em(33);
+		
+		@media screen and ( max-width: $tablet_portrait + px ) {
+			font-size: em(28);
+		}
 	}
 }

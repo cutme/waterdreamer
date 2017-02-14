@@ -11,17 +11,10 @@
 	display: none;
 }
 
-.top-placeholder {
-	@extend %abs;
-	top: 0; left: 0;
-	width: 100%;
-	height: 100px;
-	background: {
-		image: url(../images/addons/wd-top.png);
-		repeat: no-repeat;
-		position: center;
-	}
+.no-scroll {
+	overflow: hidden;
 }
+
 
 .safari {
 	* {

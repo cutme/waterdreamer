@@ -2,54 +2,107 @@
 	margin-bottom: 60px;
 	padding: 110px 40px 0 40px;
 	
+	@media screen and ( max-width: $tablet + px ) {
+		padding: {
+			left: 60px;
+			right: 60px;
+		}
+	}
+	
+	@media screen and ( max-width: $smartphone +px ) {
+		padding: {
+			left: 0;
+			right: 0;
+		}
+	}
+
 	&__line {
 		@extend %rel;
 		height: 10px;
 		background-color: $c-gray--brighter;
 		box-shadow: rgba(black, .3) 0 2px 3px inset;
+	
+		display: flex;
+		justify-content: space-between;
 	}
 	
 	&__step {
-		@extend %abs;
-		bottom: -12px;
-		width: 120px;		
+		position: relative;
+		bottom: 12px;
+		width: grid(120, 1070 - 40 - 40 - 45 - 45);	
 		
 		&:first-child {
 			left: -60px;
+
+			@media screen and ( max-width: $tablet + px ) {
+				left: auto;				
+			}		
 		}
 		
 		&:nth-child(2) {
-			left: calc(33% - 60px);
+		
+			&:after {
+				width: calc(260% - 60px);
+				
+				@media screen and ( max-width: $tablet_portrait + px ) {
+					width: calc(225%);
+				}
+			}
 		}
 		
 		&:nth-child(3) {
-			left: calc(66% - 60px);
+
 		}
 		
 		&:last-child {
 			right: -60px;
+			
+			@media screen and ( max-width: $tablet + px ) {
+				right: auto;
+			}
+			
+			@media screen and ( max-width: $smartphone +px ) {
+				right: auto;
+			}
 		}
 		
 		&:after {
 			@extend %abs-after;
+			@extend %anim;
+			transition-duration: 500ms;
+			transform-origin: left ;
 			left: 76px;
+			left: 60%;
 			top: 12px;
-			display: none;
 			background-color: $c-navy;
-			width: 274px;
 			height: 10px;
+			transform: scaleX(0);
+			
+			width: 260%;
+			
+			@media screen and ( max-width: $tablet + px ) {
+				width: calc(260% - 60px);
+			}
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				width: calc(225%);
+			}
 		}
 
-		&.is-active {
+		&.is-active--line {
 			&:not(:last-child) {
 				&:after {
-					display: block;
+					transform: scaleX(1);
 				}
 			}
 		}		
 	}
 
 	&__dot {
+		@extend %rel;
+		
+		
+		z-index: 10;
 		width: 34px;
 		height: 34px;
 		background-color: $c-gray--brighter;
@@ -60,20 +113,32 @@
 		align-items: center;
 		text-align: center;
 		justify-content: center;
-		
+
 		.is-active & {
+			@extend %anim;
+			transition-delay: 500ms;
 			background-color: $c-navy;
-		}
-		
+		}		
+
 		i {
-			@include gradient(#aadb41, #86bd11);
-			display: none;
+			
+			
+			background: linear-gradient(#aadb41 0%, #86bd11 100%);
+			//display: none;
+			opacity: 0;
 			width: 16px;
 			height: 16px;
 			border-radius: 50%;
 			
 			.is-active & {
-				display: block;
+				@extend %anim;
+				transition-delay: 500ms;
+				opacity: 1;
+			}
+			
+			.is-dot-inactive & {
+				
+				background: $c-navy;
 			}
 		}
 	}	
@@ -83,7 +148,7 @@
 		left: 50%; top: -90px;
 		transform: translateX(-50%);
 		text-align: center;
-		white-space: nowrap;
+		white-space: nowrap;		
 		
 		i {
 			margin: 0 auto 5px auto;
@@ -96,6 +161,10 @@
 			
 			.is-active & {
 				color: $c-navy;
+			}
+			
+			@media screen and ( max-width: 640px ) {
+				display: none;
 			}
 		}
 	}

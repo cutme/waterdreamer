@@ -12,6 +12,7 @@
 	
 		waterdreamer.helper.exist('.js-niceSelect') && ns();
 		waterdreamer.helper.exist('#configurator') && waterdreamer.configurator.init();
+		waterdreamer.helper.exist('#nav') && waterdreamer.nav.init();
 	
 	});
 

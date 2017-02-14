@@ -11,7 +11,15 @@
 	
 	&__item {
 		float: left;
-		width: 300px;
+		width: grid(300, $grid-base-width - 2*55);
+		
+		@media screen and ( max-width: $tablet_portrait + px ) {
+			width: 50%;
+		}
+		
+		@media screen and ( max-width: 640px ) {
+			width: 100%;
+		}
 
 		&:nth-child(2n+1) {
 			clear: left;
@@ -19,6 +27,10 @@
 		
 		&--wide {
 			width: 100%;
+			
+			@media screen and ( max-width: $tablet_portrait + px ) {
+				width: 100%;
+			}
 		}
 	}
 	
@@ -56,7 +68,7 @@
 	}
 
 	&__title {
-		@include gradient(#333572, #22234c);
+		background: linear-gradient(#333572 0%, #22234c 100%);
 		padding: 8px 0 2px 10px;
 		line-height: 1;
 		font: {
@@ -73,6 +85,15 @@
 			font: {
 				size: em(12);
 				weight: $bold;
+			}
+			
+			@media screen and ( max-width: 640px ) {
+				width: 50%;
+			}
+			
+			@media screen and ( max-width: $smartphone + px ) {
+				float: none;
+				width: 100%;
 			}
 		}
 	}
