@@ -1,8 +1,9 @@
 .c-term {
 	@extend %clear;
 	margin-bottom: 40px;
+	//display: none;
 	
-	@media screen and ( min-width: 641 + px ) {
+	@media screen and ( min-width: 641px ) {
 		display: flex;
 		justify-content: space-between;
 	}
@@ -14,13 +15,13 @@
 	&__item {
 		width: 310px;
 
-		@media screen and ( min-width: 641 + px ) and ( max-width: $grid-base-width + px ) {
+		@media screen and ( min-width: 641px ) and ( max-width: $grid-base-width + px ) {
 			width: grid(310, 1070 - 45 - 45);
 		}
 		
-		
-		
-//		$grid-base-width 1070
+		@media screen and ( max-width: 640px ) {
+			width: 100%;
+		}
 	}
 	
 	&__lead {

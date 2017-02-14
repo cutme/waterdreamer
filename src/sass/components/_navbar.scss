@@ -1,7 +1,7 @@
 .c-navbar {
-	margin-bottom: 60px;
-	padding: 110px 40px 0 40px;
-	
+	padding: 110px 40px 60px 40px;
+	overflow: hidden;
+
 	@media screen and ( max-width: $tablet + px ) {
 		padding: {
 			left: 60px;
@@ -21,7 +21,6 @@
 		height: 10px;
 		background-color: $c-gray--brighter;
 		box-shadow: rgba(black, .3) 0 2px 3px inset;
-	
 		display: flex;
 		justify-content: space-between;
 	}
@@ -99,9 +98,7 @@
 	}
 
 	&__dot {
-		@extend %rel;
-		
-		
+		@extend %rel;		
 		z-index: 10;
 		width: 34px;
 		height: 34px;
